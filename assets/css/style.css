@@ -1,5 +1,84 @@
-h1{
-    font-size: 3.75rem;
-    font-weight: 700;
-    color: #FFF;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:wght@900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    font-size: 62.5%; /*10px / 16px */
+    --font-default: 'Montserrat';
+    --font-heading: 'Poppins';
+    --color-default: #FFF;
+    --color-secundary: #000;
+}
+
+body{
+    font-family: var(--font-default);
+}
+
+header{
+    display: flex; /*flexbox*/
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2rem;
+    height: 100vh;
+    background-image: url('./Image/dev.jpg');
+    background-size: cover;
+    color: var(--color-default);
+    /* shorthand */
+    padding: 21rem 11rem;
+   
+}
+
+h1, 
+h2, 
+h3 {
+    font-family: var(--font-heading);
+    font-weight: 900;   
+}
+
+h1 {
+    font-size: 6rem;
+    margin-bottom: 1rem;
+}
+
+h2{
+    font-size: 4.4rem;
+}
+
+p{
+    font-size: 3rem;
+}
+
+span {
+    font-size: 4.5rem;
+}
+
+.botao{
+    padding: 1.4rem 11rem;
+    background: linear-gradient(90deg, #6A3093 0%, #Ffa500 100%);
+    border-radius: 10px;
+    font-size: 3rem;
+    color: #FFFFFF;
+    text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+    text-decoration: none;
+}
+
+section {
+    display: flex;
+    gap: 2rem;
+    padding: 8.6rem;
+}
+
+.avatar {
+    border-radius: 50%;
+}
+
+#texto-apresentacao{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2rem;
 }
